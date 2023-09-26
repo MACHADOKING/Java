@@ -118,6 +118,10 @@ public class App {
         }
         System.out.println("Dia da semana: " + dia);
         scan.close();
+
+        double valor = 34.5;
+        double desconto = (valor < 20.0) ? valor * 0.1 : valor * 0.05;
+        System.out.println("O desconto foi de: " + desconto);
     }
 
     public static void imprimirSinal(int numero) {
