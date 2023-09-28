@@ -1,7 +1,9 @@
+package triangulo;
+
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Triangle;
+import triangulo.entities.Triangle;
 
 public class Main {
     public static void main(String[] args) throws Exception {
