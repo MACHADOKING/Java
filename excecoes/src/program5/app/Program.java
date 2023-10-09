@@ -1,0 +1,39 @@
+package program5.app;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import program5.models.entities.Account;
+import program5.models.exceptions.BusinessException;
+
+public class Program {
+    public static void main(String[] args) {
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Informe os dados da conta");
+        System.out.print("Numero: ");
+        int number = sc.nextInt();
+        System.out.print("Titular: ");
+        sc.nextLine();
+        String holder = sc.nextLine();
+        System.out.print("Saldo inicial: ");
+        double balance = sc.nextDouble();
+        System.out.print("Limite de saque: ");
+        double withdrawLimit = sc.nextDouble();
+
+        Account acc = new Account(number, holder, balance, withdrawLimit);
+
+        System.out.println();
+        System.out.print("Informe uma quantia: ");
+        double amount = sc.nextDouble();
+
+        try {
+            acc.withdraw(amount);
+            System.out.printf("Novo saldo: %.2f", acc.getBalance());
+        } catch (BusinessException e) {
+            System.out.println("Erro: " + e.getMessage());
+        }
+        sc.close();
+    }
+}
