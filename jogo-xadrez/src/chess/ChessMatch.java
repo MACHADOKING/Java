@@ -167,7 +167,7 @@ public class ChessMatch {
             return false;
         }
         List<Piece> list = piecesOnTheBoard.stream()
-                .filter(x -> ((ChessPiece) x).getColor() == opponent(color)).collect(Collectors.toList());
+                .filter(x -> ((ChessPiece) x).getColor() == color).collect(Collectors.toList());
         for (Piece p : list) {
             boolean[][] mat = p.possibleMoves();
             for (int i = 0; i < board.getRows(); i++) {
