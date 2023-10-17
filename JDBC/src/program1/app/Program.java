@@ -1,6 +1,7 @@
 //package program1.app;
 
 import db.DB;
+import db.DbException;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -24,7 +25,11 @@ public class Program {
                 System.out.println(rs.getInt("Id") + ", " + rs.getString("Name"));
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new DbException(e.getMessage());
+        } finally {
+            DB.closeResultSet(rs);
+            DB.closeStatement(st);
+            DB.closeConnection();
         }
     }
 }
