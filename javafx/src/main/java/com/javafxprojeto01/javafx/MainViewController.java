@@ -1,5 +1,6 @@
 package com.javafxprojeto01.javafx;
 
+import com.javafxprojeto01.javafx.Main;
 import com.javafxprojeto01.javafx.util.Alerts;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
