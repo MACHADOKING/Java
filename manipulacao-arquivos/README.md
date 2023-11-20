@@ -1,18 +1,37 @@
-## Getting Started
+# Projeto de Exemplo: Manipulação de Arquivos em Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Bem-vindo ao meu projeto de exemplo focado em exercícios de manipulação de arquivos em Java! Este projeto foi desenvolvido para fornecer práticas sólidas e demonstrar técnicas eficientes de leitura, escrita e manipulação de arquivos em um ambiente Java.
 
-## Folder Structure
+## Objetivos do Projeto
 
-The workspace contains two folders by default, where:
+Os principais objetivos deste projeto incluem:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- **Leitura e Escrita de Arquivos:** Demonstrar como ler e escrever em arquivos em Java, abordando diferentes tipos de dados.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- **Manipulação de Diretórios:** Explorar operações de criação, remoção e listagem de diretórios.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- **Tratamento de Exceções:** Implementar práticas seguras de manipulação de arquivos, incluindo tratamento adequado de exceções.
 
-## Dependency Management
+## Estrutura do Projeto
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+O projeto possui a seguinte estrutura de diretórios:
+
+- **src/main/java:** Contém o código-fonte do projeto, organizado para apresentar exercícios de manipulação de arquivos em Java.
+
+- **src/main/resources:** Armazena recursos, como arquivos de exemplo para leitura e escrita.
+
+O README específico do projeto fornecerá mais detalhes sobre a estrutura e como executar o sistema.
+
+## Como Usar
+
+Explore este projeto para aprimorar suas habilidades em manipulação de arquivos em Java. Os exercícios incluem leitura de arquivos de texto, escrita em arquivos binários, manipulação de diretórios e muito mais. Consulte o código-fonte e as instruções no README para realizar os exercícios.
+
+## Tecnologias Utilizadas
+
+- **Java:** Linguagem de programação principal.
+
+## Contribuindo
+
+Este projeto foi criado com o intuito de oferecer exercícios práticos de manipulação de arquivos em Java. Se você tiver sugestões, melhorias ou observações específicas, sinta-se à vontade para abrir uma issue ou enviar um pull request. A contribuição é sempre bem-vinda!
+
+Obrigado por explorar o Projeto de Exemplo de Manipulação de Arquivos em Java!
